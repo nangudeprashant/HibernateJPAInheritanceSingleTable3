@@ -9,7 +9,7 @@ import javax.persistence.InheritanceType;
 
 @Entity(name = "Account")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-public class Account {
+public abstract class Account {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
